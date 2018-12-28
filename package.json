@@ -2,7 +2,7 @@
   "name": "street-art-talks",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/PlayaLink/street-art-talks",
+  "homepage": "https://playalink.github.io/street-art-talks",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.7.0",
