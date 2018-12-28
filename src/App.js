@@ -9,7 +9,7 @@ const MuralList = () => (
   <div>
     <Link to={process.env.PUBLIC_URL + '/angelina-christina'}>
       <img src={angelinaChristina1} />
-      <span>Two faces</span>
+      <div>Two faces</div>
     </Link>
   </div>
 )
@@ -22,7 +22,7 @@ const Home = () => (
         Street Art Talks
       </h2>
       <p>
-        An audio tour of DTLA's arts district
+        An audio tour of DTLA street art
       </p>
     </header>
     <MuralList/>
