@@ -4,11 +4,15 @@
   "private": true,
   "homepage": "https://playalink.github.io/street-art-talks",
   "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
     "gh-pages": "^2.0.1",
+    "http": "^0.0.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "2.1.2"
+    "react-scripts": "2.1.2",
+    "twilio": "^3.26.0"
   },
   "scripts": {
     "predeploy": "npm run build",
