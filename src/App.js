@@ -7,7 +7,7 @@ import { BrowserRouter, Route, Link } from 'react-router-dom';
 
 const MuralList = () => (
   <div>
-    <Link to="/angelina-christina">
+    <Link to={process.env.PUBLIC_URL + '/angelina-christina'}>
       <img src={angelinaChristina1} />
       <span>Two faces</span>
     </Link>
@@ -39,21 +39,22 @@ const MuralDetail = (props) => (
       <source src={props.audio} type="audio/mpeg" />
     </audio>
     <div>
-      <Link to="/">Go back</Link>
+      <Link to={process.env.PUBLIC_URL + '/'}>Go back</Link>
     </div>
   </div>
 )
 
 class App extends Component {
   render() {
+    console.log("process.env.PUBLIC_URL: ", process.env.PUBLIC_URL);
     return (
       <div className="App">
         <BrowserRouter>
           <div>
-            <Route exact path='/' component={Home}/>
+            <Route exact path={process.env.PUBLIC_URL + '/'} component={Home}/>
             <Route
               exact
-              path='/angelina-christina'
+              path={process.env.PUBLIC_URL + '/angelina-christina'}
               render={(props) => (
                 <MuralDetail {...props}
                              name="Angelina Christina"
