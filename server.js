@@ -6,7 +6,10 @@ const bodyParser = require('body-parser');
 
 var app = express();
 
-app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
+const port = process.env.PORT || 1337;
 
 app.post('/sms', function(req, res) {
   const incomingText = req.body.Body.toUpperCase();
@@ -36,6 +39,15 @@ app.post('/sms', function(req, res) {
   res.end(twiml.toString());
 });
 
-http.createServer(app).listen(1337, function () {
+if (process.env.NODE_ENV === 'production') {
+  // Serve any static files
+  app.use(express.static(path.join(__dirname, 'client/build')));
+  // Handle React routing, return all requests to React app
+  app.get('*', function(req, res) {
+    res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+  });
+}
+
+http.createServer(app).listen(port, function () {
   console.log("Express server listening on port 1337");
 });
