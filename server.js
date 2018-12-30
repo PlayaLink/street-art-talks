@@ -48,6 +48,4 @@ if (process.env.NODE_ENV === 'production') {
   });
 }
 
-http.createServer(app).listen(port, function () {
-  console.log("Express server listening on port 1337");
-});
+http.createServer(app).listen(port, () => console.log(`Listening on port ${port}`));
