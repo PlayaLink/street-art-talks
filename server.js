@@ -20,11 +20,11 @@ app.post('/sms', function(req, res) {
   switch (incomingText) {
     case 'FACES':
       item = 'Two Faces Embracing';
-      link = 'https://playalink.github.io/street-art-talks/angelina-christina';
+      link = 'https://boiling-refuge-79609.herokuapp.com/angelina-christina';
       break;
     case 'INFLUENCE':
       item = 'Legislative Influence For Sale';
-      link = 'https://playalink.github.io/street-art-talks/shepard-fairey-reagan';
+      link = 'https://boiling-refuge-79609.herokuapp.com/shepard-fairey-reagan';
       break;
     default:
       break;
