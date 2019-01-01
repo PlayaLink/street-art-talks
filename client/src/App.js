@@ -12,6 +12,11 @@ import twitchell_ruscha from './img/twitchell_ruscha.jpg';
 import interview_placeholder from './audio/interview_placeholder.mp3';
 import './App.scss';
 import { BrowserRouter, Link, Route } from 'react-router-dom';
+//Font Awesome
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
+library.add(faArrowLeft);
 
 const MuralList = () => (
   <div className="mural-list">
@@ -119,8 +124,8 @@ const MuralCard = (props) => (
       <div className="link">Learn More: { props.link }</div>
     ) }
 
-    <div>
-      <Link to={ process.env.PUBLIC_URL + '/' }>Go back</Link>
+    <div className="back-button">
+      <Link to={ process.env.PUBLIC_URL + '/' }><FontAwesomeIcon icon="arrow-left" />&nbsp; Home</Link>
     </div>
   </div>
 );
