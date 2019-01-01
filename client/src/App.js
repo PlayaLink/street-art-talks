@@ -127,10 +127,11 @@ const MuralCard = (props) => (
     </audio>
     { props.description && (
       <div className="description">
-        { /*{props.description}*/ }
-        { props.description.split('\n').map((i, key) => {
-          return <p key={ key }>{ i }</p>;
-        }) }
+        { ( typeof props.description === 'string') ? (
+           props.description.split('\n').map((i, key) => {
+            return <p key={ key }>{ i }</p>;
+          })
+        ) : props.description }
       </div>
     ) }
 
@@ -162,7 +163,7 @@ class App extends Component {
                            title="Two faces sharing an intimate moment."
                            location="4th and Merrick."
                            audio={ interview_placeholder }
-                           description="This mural, completed in early 2017, is a collaboration between L.A.-based Christina Angelina (aka Starfighter) and British artist Fanakapan."
+                           description="Completed in early 2017, this is a collaboration between L.A.-based Christina Angelina (aka Starfighter) and British artist Fanakapan."
                            link="https://www.instagram.com/starfightera/?hl=en"
                 />
               ) }
@@ -177,6 +178,11 @@ class App extends Component {
                            title="Legislative Influence For Sale."
                            location="Alemeda St and Traction Ave."
                            audio={ interview_placeholder }
+                           link="http://angelcitybrewery.com/brick-mortar-spraypaint-wheatpaste/"
+                           description="This piece by Shepard Fairey was one of several commissioned by the Museum of Contemporary Art (MOCA) as part of the “Arts in the Streets” exhibit in 2011.
+Perhaps best known for his “Andre the Giant has a Posse” pasteups and “Hope and Change” Obama posters of 2008, Fairey frequently utilizes satire to make political statements.
+You can also see another one of his pieces by looking south towards 3rd street from the brewery, entitled “Peace Goddess.”
+"
                 />
               ) }
             />
@@ -225,6 +231,8 @@ This was an especially collaborative effort- Along with the work of Kofie and Nu
                            title="Bloom"
                            location="701 E 3rd Street"
                            audio={ interview_placeholder }
+                           link="http://www.huemannature.com/hueman/"
+                           description={[`This wall commemorates the late community advocate and manager of The American Hotel, Joel Bloom`, <p>To learn more about Bloom, checkout <a href='https://www.talesoftheamerican.com/'>this documentary</a> about the Arts District.</p>]}
                 />
               ) }
             />
