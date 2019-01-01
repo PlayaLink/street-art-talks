@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
-import skyline from './img/arts-district-dtla-skyline.jpg';
 import angelinaChristina1 from './img/angelina-christina-1.jpg';
 import angelinaChristina1_audio from './audio/AngelinaChristina1.mp3'
 import shepard_fairey_reagan_img from './img/shepard-fairey-reagan.jpg';
 import shepard_fairey_reagan_audio from './audio/shepard_fairey_reagan.mp3';
-import './App.css';
+import './App.scss';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 
 const MuralList = () => (
   <div>
     <div className="mural-card">
       <Link to={process.env.PUBLIC_URL + '/angelina-christina'}>
-        <img src={angelinaChristina1} />
-        <div>Two faces</div>
+        <img className="image" src={angelinaChristina1} />
+        <div className="title">Two faces</div>
       </Link>
     </div>
     <div className="mural-card">

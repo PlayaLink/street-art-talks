@@ -36,5 +36,21 @@
 }
 
 .mural-card {
-  margin-top: 1rem;
+  padding: 0.25rem;
+  background-color: gray;
+  margin: 1rem 0.5rem 0.5rem 0.5rem;
+  border: 1px solid gray;
+  img {
+    max-width: 100%;
+  }
+  a {
+    text-decoration: none ;
+    color: white;
+  }
+  a:hover
+  {
+    color:white;
+    text-decoration:none;
+    cursor:pointer;
+  }
 }
