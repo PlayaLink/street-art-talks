@@ -12,12 +12,26 @@ import twitchell_ruscha from './img/twitchell_ruscha.jpg';
 import interview_placeholder from './audio/interview_placeholder.mp3';
 import './App.scss';
 import { BrowserRouter, Link, Route } from 'react-router-dom';
+import styled from 'styled-components';
+
 //Font Awesome
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 library.add(faArrowLeft);
 
+
+const Button = styled.a`
+  display: inline-block;
+  border-radius: 3px;
+  padding: 0.5rem 0;
+  margin: 0.5rem 1rem;
+  width: 8rem;
+  background: cornflowerblue;
+  color: white;
+  border: 2px solid gray;
+  text-decoration: none ;
+`;
 const MuralList = () => (
   <div className="mural-list">
     <div className="mural-tile">
@@ -121,7 +135,7 @@ const MuralCard = (props) => (
     ) }
 
     { props.link && (
-      <div className="link">Learn More: { props.link }</div>
+      <div className="link"><Button href={ props.link }>Learn More</Button></div>
     ) }
 
     <div className="back-button">
