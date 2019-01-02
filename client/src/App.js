@@ -36,37 +36,37 @@ const MuralList = () => (
     <div className="mural-tile">
       <Link to={ process.env.PUBLIC_URL + '/starfighter-fanakapan' }>
         <img className="image" src={ starfighter_fanakapan } />
-        <div className="title">Two faces</div>
+        <div className="title">#FACES</div>
       </Link>
     </div>
     <div className="mural-tile">
       <Link to={ process.env.PUBLIC_URL + '/shepard-fairey-legislative-influence-for-sale' }>
         <img src={ fairey_legislative_influence_for_sale } />
-        <div>Legislative Influence For Sale</div>
+        <div>#INFLUENCE</div>
       </Link>
     </div>
     <div className="mural-tile">
       <Link to={ process.env.PUBLIC_URL + '/tristan-eaton-peace-by-piece' }>
         <img src={ eaton_peace_by_piece } />
-        <div>Peace by Piece</div>
+        <div>#PEACE</div>
       </Link>
     </div>
     <div className="mural-tile">
       <Link to={ process.env.PUBLIC_URL + '/el-mac-la-abuelita' }>
         <img src={ el_mac_la_abuelita } />
-        <div>La Abuelita</div>
+        <div>#ABUELITA</div>
       </Link>
     </div>
     <div className="mural-tile">
       <Link to={ process.env.PUBLIC_URL + '/hueman-bloom' }>
         <img src={ hueman_bloom } />
-        <div>Bloom</div>
+        <div>#BLOOM</div>
       </Link>
     </div>
     <div className="mural-tile">
       <Link to={ process.env.PUBLIC_URL + '/jr-wrinkles-of-the-city' }>
         <img src={ jr_wrinkles } />
-        <div>The Wrinkles of the City (series)</div>
+        <div>#WRINKLES</div>
       </Link>
     </div>
     <div className="mural-tile">
@@ -74,25 +74,25 @@ const MuralList = () => (
         to={ process.env.PUBLIC_URL +
         '/damon-martin-every-piece-of-ivory-comes-from-a-dead-elephant' }>
         <img src={ martin_ivory } />
-        <div>Every Piece of Ivory Comes From A Dead Elephant</div>
+        <div>#IVORY</div>
       </Link>
     </div>
     <div className="mural-tile">
       <Link to={ process.env.PUBLIC_URL + '/mikael-b-artshare-la' }>
         <img src={ mikaelb_artshare } />
-        <div>Artshare LA exterior</div>
+        <div>#ARTSHARE</div>
       </Link>
     </div>
     <div className="mural-tile">
       <Link to={ process.env.PUBLIC_URL + '/nychos-captain-hercules-fighting-hydra' }>
         <img src={ nychos_hercules_hydra } />
-        <div>Captain Hercules Fighting Hydra</div>
+        <div>#HERCULES</div>
       </Link>
     </div>
     <div className="mural-tile">
       <Link to={ process.env.PUBLIC_URL + '/kent-twitchell-ed-ruscha-monument' }>
         <img src={ twitchell_ruscha } />
-        <div>Ed Ruscha Monument</div>
+        <div>#RUSCHA</div>
       </Link>
     </div>
   </div>
@@ -107,6 +107,11 @@ const Home = () => (
       </h2>
       <p>
         An audio tour of DTLA street art
+      </p>
+      <p className="instructions">
+        <div>Text the #CODE</div>
+        <div>to (351)-666-6721</div>
+        <div>to learn more about each mural</div>
       </p>
     </header>
     <MuralList />
