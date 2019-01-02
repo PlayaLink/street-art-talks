@@ -1,5 +1,5 @@
 {
-  "name": "Street Art Talks",
+  "name": "street-art-talks",
   "version": "1.0.0",
   "scripts": {
     "client": "cd client && yarn start",
