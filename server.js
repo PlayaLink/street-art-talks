@@ -62,7 +62,7 @@ app.post('/sms', function(req, res) {
       break;
   }
   if (!link) {
-    response = "For a full list of featured street art, visit https://playalink.github.io/street-art-talks/"
+    response = "For a full list of featured street art, visit StreetArtTalks.com"
   } else {
     response = `Learn more about the "${item}" mural by visiting ${link}`
   }
