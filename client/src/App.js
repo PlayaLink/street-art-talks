@@ -117,7 +117,9 @@ const MuralCard = (props) => (
   <div className="mural-card">
     <img src={ props.image } />
     <div className="header">
-      <div className="title">{ props.title }</div>
+      {props.title  && (
+        <div className="title">{ props.title }</div>
+       )}
       <div>By <span className="artist">{ props.artist }</span></div>
       <p className="location">{ props.location }</p>
     </div>
@@ -169,10 +171,9 @@ class App extends Component {
                              <a href="https://www.instagram.com/fanakapan/?hl=en">Fanakapan</a> ] }
 
                            image={ starfighter_fanakapan }
-                           title="Two faces sharing an intimate moment."
                            location="4th and Merrick."
                            audio={ interview_placeholder }
-                           description="Completed in early 2017, this is a collaboration between L.A.-based Christina Angelina (aka Starfighter) and British artist Fanakapan."
+                           description="Completed in early 2017, this mural is a collaboration between L.A.-based Christina Angelina (aka Starfighter) and British artist Fanakapan."
                            source="https://www.discoverlosangeles.com/blog/walking-tour-street-art-arts-district"
                 />
               ) }
