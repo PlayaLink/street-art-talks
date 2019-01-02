@@ -64,7 +64,7 @@ app.post('/sms', function(req, res) {
   if (!link) {
     response = "For a full list of featured street art, visit https://playalink.github.io/street-art-talks/"
   } else {
-    response = `Learn more about ${item} by visiting ${link}`
+    response = `Learn more about the "${item}" mural by visiting ${link}`
   }
   var twiml = new twilio.twiml.MessagingResponse();
   twiml.message(response);
