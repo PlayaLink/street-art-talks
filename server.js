@@ -19,43 +19,43 @@ app.post('/sms', function(req, res) {
   let link = null;
   switch (incomingText) {
     case 'FACES':
-      item = 'this mural by Starfighter and Fanakapan';
+      item = 'Starfighter and Fanakapan';
       link = 'http://www.streetarttalks.com/starfighter-fanakapan';
       break;
     case 'INFLUENCE':
-      item = 'Legislative Influence For Sale';
+      item = 'Shepard Fairey';
       link = 'http://www.streetarttalks.com/shepard-fairey-legislative-influence-for-sale';
       break;
     case 'PEACE':
-      item = 'Peace by piece';
+      item = 'Tristan Eaton';
       link = 'http://www.streetarttalks.com/tristan-eaton-peace-by-piece';
       break;
     case 'ABUELITA':
-      item = 'La Abuelita';
+      item = 'El Mac';
       link = 'http://www.streetarttalks.com/el-mac-la-abuelita';
       break;
     case 'BLOOM':
-      item = 'Bloom';
+      item = 'Hueman';
       link = 'http://www.streetarttalks.com/hueman-bloom';
       break;
     case 'WRINKLES':
-      item = 'Wrinkles of the City';
+      item = 'JR';
       link = 'http://www.streetarttalks.com/jr-wrinkles-of-the-city';
       break;
     case 'ELEPHANTS':
-      item = 'Every Piece of Ivory Comes From A Dead Elephant';
+      item = 'Damon Martin';
       link = 'http://www.streetarttalks.com/damon-martin-every-piece-of-ivory-comes-from-a-dead-elephant';
       break;
     case 'ARTSHARE':
-      item = 'ArtShare LA façade';
+      item = 'Mikael B';
       link = 'http://www.streetarttalks.com/mikael-b-artshare-la';
       break;
     case 'HERCULES':
-      item = 'Captain Hercules Fighting Hydra';
+      item = 'Nychos';
       link = 'http://www.streetarttalks.com/nychos-captain-hercules-fighting-hydra';
       break;
     case 'RUSCHA':
-      item = 'Ed Ruscha Monument';
+      item = 'Kent Twitchell';
       link = 'http://www.streetarttalks.com/kent-twitchell-ed-ruscha-monument';
       break;
     default:
@@ -64,7 +64,7 @@ app.post('/sms', function(req, res) {
   if (!link) {
     response = "For a full list of featured street art, visit StreetArtTalks.com"
   } else {
-    response = `Learn more about the "${item}" mural by visiting ${link}`
+    response = `To learn more about this mural by ${item} visit ${link}`
   }
   var twiml = new twilio.twiml.MessagingResponse();
   twiml.message(response);
