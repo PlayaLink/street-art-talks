@@ -128,9 +128,9 @@ const MuralCard = (props) => (
       <div>By <span className="artist">{ props.artist }</span></div>
       <p className="location">{ props.location }</p>
     </div>
-    <audio className="audio-controls" controls>
-      <source src={ props.audio } type="audio/mpeg" />
-    </audio>
+    {/*<audio className="audio-controls" controls>*/}
+      {/*<source src={ props.audio } type="audio/mpeg" />*/}
+    {/*</audio>*/}
     { props.description && (
       <div className="description">
         { (typeof props.description === 'string') ? (
