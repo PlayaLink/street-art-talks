@@ -110,7 +110,7 @@ const Home = () => (
       </p>
       <p className="instructions">
         <div>Text the #CODE</div>
-        <div>to (351)-666-6721</div>
+        <div>to (351)666-6721</div>
         <div>to learn more about each mural</div>
       </p>
     </header>
