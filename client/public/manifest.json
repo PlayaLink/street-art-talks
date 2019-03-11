@@ -1,9 +1,9 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Street Art Talks",
+  "name": "Street Art Talks",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "spray_can.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     }

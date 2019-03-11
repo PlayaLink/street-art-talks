@@ -74,7 +74,7 @@ const MuralList = () => (
         to={ process.env.PUBLIC_URL +
         '/damon-martin-every-piece-of-ivory-comes-from-a-dead-elephant' }>
         <img src={ martin_ivory } />
-        <div>#IVORY</div>
+        <div>#ELEPHANTS</div>
       </Link>
     </div>
     <div className="mural-tile">
