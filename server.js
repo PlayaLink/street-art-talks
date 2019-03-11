@@ -62,7 +62,7 @@ app.post('/sms', function(req, res) {
       break;
   }
   if (!link) {
-    response = "For a full list of featured street art, visit StreetArtTalks.com"
+    response = "I'm sorry, I don't recognize that mural code. For a full list of featured street art, visit StreetArtTalks.com"
   } else {
     response = `To learn more about this mural by ${item} visit ${link}`
   }
